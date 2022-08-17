@@ -1,0 +1,42 @@
+/* --------------------- BUTTON GENERAL RULES ------------------- */
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.btn {
+    width: 100%;
+    max-width: 310px;
+    padding: 0.9rem 0 calc(0.9rem - 3px);
+    border-radius: 10rem;
+    color: $c_txt_btn;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.ios {
+    background-color: $c_bg_button;
+    border-bottom: 3px solid darken($color: $c_bg_button, $amount: 10%);
+    box-shadow: 0 10px 10px 0px rgba($c_bg_button, 0.2);
+
+    &:hover {
+        background-color: lighten($c_bg_button, 5%);
+        box-shadow: 0 10px 10px 0px rgba($c_bg_button, 0.4);
+    }
+}
+
+.mac {
+    background-color: $c_bg_button2;
+    border-bottom: 3px solid darken($color: $c_bg_button2, $amount: 10%);
+    box-shadow: 0 10px 10px 0px rgba($c_bg_button2, 0.2);
+
+    &:hover {
+        background-color: lighten($c_bg_button2, 5%);
+        box-shadow: 0 10px 10px 0px rgba($c_bg_button2, 0.4);
+    }
+}
